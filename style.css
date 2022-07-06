@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+/* ======================================
+Global Section Start
+====================================== */   
+:root {
+    --red: crimson;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #777;
+    line-height: 1.7;
+    height: 500vh;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+Section:not(:first-child) {
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    overflow-x: hidden;
+}
+h1,h3,h4,h5,h6 {
+    font-weight: 600;
+    color: #222;
+}
+h2 {
+    user-select: none;
+}
+a {
+    color: #222;
+    text-decoration: none;
+    transition: all .4s ease-in-out;
+    border-radius: 10px;
+}
+a:hover {
+    color: var(--red);
+}
+.btn {
+    border-radius: 10px;
+    padding: 14px 38px;
+}
+.btn-brand {
+    color: #fff;
+    font-weight: bold;
+    border: 5px solid var(--red);
+    background: var(--red);
+    width: fit-content;
+}
+.btn-brand:hover {
+    background: #fff;
+    color: var(--red) !important;
+}
+.nav-item a.active {
+    color: #fff !important;
+    background: var(--red);
+    border-radius: 10px;
+}
+img {
+    object-fit: cover;
+    width: 100%;   
+}
+.shadow-on-hover {
+    transition: all .2s ease-in-out;
+}
+.shadow-on-hover:hover {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+/* ======================================
+Global Section End
+====================================== */
+
+
+/* ======================================
+Nav Section Start
+====================================== */
+.home {
+    height: 100vh;
+}
+.nav-item a:hover {
+    color: #fff !important;
+    background: crimson;
+}
+.nav-item {
+    width: fit-content;
+}
+#navbarNav .navbar-nav .nav-item {
+    margin: 0 2px;
+}
+/* ======================================
+Nav Section End
+====================================== */
+
+
+/* ======================================
+Home Section Start
+====================================== */
+.slide-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/2983101/pexels-photo-2983101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+.slide-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://media.istockphoto.com/photos/spaghetti-with-king-prawns-on-the-black-dish-picture-id515314758?k=20&m=515314758&s=612x612&w=0&h=y-uMboZtX5a4MLA1Yx8zp5QXigXNMZy6VLAM8-ZJgFY=);
+}
+.slide-3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://media.istockphoto.com/photos/salmon-deluxe-picture-id1262566893?k=20&m=1262566893&s=612x612&w=0&h=4L7J-eG1Eu_1_VDjG9yJtI5afFbJn9zX5afjFmkKv_k=);
+}
+.bg-cover {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    background: rgba(0, 0, 0, 0.5);
+    width: 40px;
+    height: 70px;
+    margin: auto;
+}
+#home .row h5 {
+    animation: scale 3s alternate;
+    font-size: 30px;
+} 
+@keyframes scale {
+    from {
+        transform: scale(1.5);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+/* ======================================
+Home Section End
+====================================== */
+
+
+/* ======================================
+About Section Start
+====================================== */
+.divider {
+    width: 60px;
+    height: 2px;
+    background: var(--red);
+}
+/* ======================================
+About Section End
+====================================== */
+
+
+/* ======================================
+Menu Section Start
+====================================== */
+.intro-text p {
+    max-width: 500px;
+    margin: auto;
+}
+#menu .container .nav .nav-item .nav-link  {
+    background: #fff;
+    margin-left: 8px;
+    margin-right: 8px;
+    color: #222;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+#menu .container .nav .nav-item .nav-link:hover {
+    color: #fff;
+    background: var(--red);
+}
+#menu .container .nav .nav-item .nav-link.active {
+    color: #fff;
+    background: var(--red);
+}
+/* ======================================
+Menu Section End
+====================================== */
+
+
+/* ======================================
+Features Section Start
+====================================== */
+#features {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/3338675/pexels-photo-3338675.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.feature {
+    border: 1px solid rgb(202, 198, 199);
+}
+.feature .feature-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--red);
+    color: #fff;
+    font-size: 28px;
+    display: inline-grid;
+    align-items: center;
+    text-align: center;
+}
+/* ======================================
+Features Section End
+====================================== */
+
+
+/* ======================================
+Teams Section Start
+====================================== */
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: -10px -10px 0 var(--red);
+    object-fit: cover;
+    object-position: center;
+}
+/* ======================================
+Teams Section End
+====================================== */
+
+
+/* ======================================
+Testimonials Section Start
+====================================== */
+.reviews {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.review img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.review .qute-icon {
+    font-size: 74px;
+    line-height: none;
+}
+/* ======================================
+Testimonials Section End
+====================================== */
+
+
+/* ======================================
+Reservation Section Start
+====================================== */
+.form-control {
+    border-radius: 10px;
+    border-width: 2px;
+}
+.form-control:focus {
+    box-shadow: none;
+    border: 2px solid var(--red);
+}
+/* ======================================
+Reservation Section End
+====================================== */
+
+
+/* ======================================
+Blog Section Start
+====================================== */
+.blog-post {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.blog-post img {
+    width: 40%;
+    height: 300px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+@media (max-width: 768px) {
+    .blog-post {
+        flex-direction: column;
+    }
+    .blog-post img {
+        width: 100%;
+       border-bottom-left-radius: 0px;
+    }
+}
+/* ======================================
+Blog Section End
+====================================== */
+
+
+/* ======================================
+Footer Section Start
+====================================== */
+.footer {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://media.istockphoto.com/photos/salmon-barbecue-grill-fried-menu-concept-serving-size-food-background-picture-id1255992857?k=20&m=1255992857&s=612x612&w=0&h=FWXh89g7lCddqV4f-Ek6YFw8-xLi0VqvuEmUVIzNGy0=);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.footer ul li a {
+    font-size: 20px;
+}
+.footer ul li a .facebook:hover {
+    color:  #1877f2;
+    transition: all .3s ease-in-out;
+}
+.footer ul li a .twitter:hover {
+    color:  #1da1f2;
+    transition: all .3s ease-in-out;
+}
+.footer ul li a .linkedin:hover {
+    color:  #0077b5;
+    transition: all .3s ease-in-out;
+}
+.footer ul li a .youtube:hover {
+    color:  #ff0000;
+    transition: all .3s ease-in-out;
+}
+/* ======================================
+Footer Section End
+====================================== */

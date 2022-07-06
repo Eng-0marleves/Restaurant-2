@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Files Links -->
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script></head>
+<body>
+    <!-- ======================
+    Home Sction Start
+    ======================= -->
+    <section id="home">
+        <!-- ======================
+        Header Sction Start
+        ======================= -->
+        <nav class="navbar navbar-expand-lg shadow p-3 zindex-tooltip font-weight-bold w-100 fixed-top bg-white d-none">
+            <div class="navbar-brand text-danger" href="#"><h2>RESTAURANT</h2></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#menu">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#teams">Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#testimonials">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#reservation">Reservation</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#blog">Blog</a>
+                </li>
+              </ul>
+              <a href="#" class="btn btn-brand">Order Online</a>
+            </div>
+        </nav>    
+        <!-- ======================
+        Header Sction End
+        ======================= -->
+    
+        
+          <div id="carouselExampleControls" class="carousel slide bg-dark" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active vh-100 slide-1 bg-cover">
+                <div class="container d-flex text-center justify-content-center align-items-center w-100 h-100">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 pt-3">
+                            <h5 class="text-white">Welcome to Restaurant</h5>
+                            <h1 class="display-1 text-white fw-bold">Good Kind Of Food and Fresh (Spicy - Cold)</h1>
+                            <a href="" class="btn btn-brand mt-3">Reservation</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item vh-100 slide-2 bg-cover">
+                <div class="container d-flex text-center justify-content-center align-items-center w-100 h-100">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 pt-3">
+                            <h5 class="text-white">Welcome to Restaurant</h5>
+                            <h1 class="display-1 text-white fw-bold">Good Kind Of Food and Fresh (Cold)</h1>
+                            <a href="" class="btn btn-brand mt-3">Reservation</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item vh-100 slide-3 bg-cover">
+                <div class="container d-flex text-center justify-content-center align-items-center w-100 h-100">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 pt-3">
+                            <h5 class="text-white">Welcome to Restaurant</h5>
+                            <h1 class="display-1 text-white fw-bold">Good Kind Of Food and Fresh (Spicy)</h1>
+                            <a href="" class="btn btn-brand mt-3">Reservation</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </section>
+    <!-- ======================
+    Home Sction End
+    ======================= -->
+
+    
+    <!-- ======================
+    About Sction Start
+    ======================= -->
+    <section id="about">
+        <div class="container">
+            <div class="row GY-4 align-items-center">
+                <div class="col-lg-5 col-md-6">
+                    <img class="img-fluid w-100" style="height: 500px; object-fit: cover;" src="https://images.pexels.com/photos/3338672/pexels-photo-3338672.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                </div>
+                <div class="col-lg-5 col-md-5 mx-auto">
+                    <h1>About US</h1>
+                    <div class="divider d-block"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut doloremque, cupiditate cumque impedit voluptatibus vero.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam voluptates est repellendus hic autem, illum quaerat tempora dolore consectetur temporibus deleniti ducimus.</p>
+                    <a href="#menu" class="btn btn-brand d-block">Explore Menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======================
+    About Sction End
+    ======================= -->
+
+    
+    <!-- ======================
+    Menu Sction Start
+    ======================= -->
+    <section id="menu" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro-text text-center mb-10">
+                    <h1>Explore Our Menu</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quas nihil recusandae mollitia a dolorum.</p>
+                </div>
+            </div>
+        </div>
+       
+        <div class="container">
+            <ul class="nav nav-pills mb-4 mt-3 justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item m-1">
+                  <a class="nav-link active" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-home" aria-selected="true">All Items</a>
+                </li>
+                <li class="nav-item m-1">
+                  <a class="nav-link" id="pills-breakfast-tab" data-toggle="pill" href="#pills-breakfast" role="tab" aria-controls="pills-breakfast" aria-selected="true">Breakfast</a>
+                </li>
+
+                <li class="nav-item m-1">
+                  <a class="nav-link" id="pills-lunch-tab" data-toggle="pill" href="#pills-lunch" role="tab" aria-controls="pills-lunch" aria-selected="true">Lunch</a>
+                </li>
+
+                <li class="nav-item m-1">
+                  <a class="nav-link" id="pills-dinner-tab" data-toggle="pill" href="#pills-dinner" role="tab" aria-controls="pills-dinner" aria-selected="true">Dinner</a>
+                </li>
+              </ul>
+    
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
+                    <div class="row gy-4">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="https://media.istockphoto.com/photos/breakfast-picture-id173667498?k=20&m=173667498&s=612x612&w=0&h=cY3h1Q-PVs3o7_p2rDxQUg5dM0qQyI6DdjTP1wuDRes=" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(4.6)</span>
+                                        <span>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star-half-stroke"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">kind of Food</a></h5>
+                                    <p class="text-black-50 small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, iste.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="https://media.istockphoto.com/photos/breakfast-with-bacon-eggs-pancakes-and-toast-picture-id533645537?k=20&m=533645537&s=612x612&w=0&h=KJXCpAo9XQvMI_djcnRMSsz_Y7OGS6z3-8VThxWyR0Q=" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(4.6)</span>
+                                        <span>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star-half-stroke"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">kind of Food</a></h5>
+                                    <p class="text-black-50 small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, iste.</p>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="https://media.istockphoto.com/photos/breakfast-with-bacon-eggs-pancakes-and-toast-picture-id916021360?k=20&m=916021360&s=612x612&w=0&h=Eu5-au9pvYPRffUiQkiaZ6wGe2DqiXujacVHzOHKRd4=" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(4.6)</span>
+                                        <span>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star-half-stroke"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">kind of Food</a></h5>
+                                    <p class="text-black-50 small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, iste.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="https://images.pexels.com/photos/2313686/pexels-photo-2313686.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(4.6)</span>
+                                        <span>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star-half-stroke"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">kind of Food</a></h5>
+                                    <p class="text-black-50 small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, iste.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(4.6)</span>
+                                        <span>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star-half-stroke"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">kind of Food</a></h5>
+                                    <p class="text-black-50 small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, iste.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="https://images.pexels.com/photos/262959/pexels-photo-262959.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(4.6)</span>
+                                        <span>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star-half-stroke"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">kind of Food</a></h5>
+                                    <p class="text-black-50 small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, iste.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(4.6)</span>
+                                        <span>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star-half-stroke"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">kind of Food</a></h5>
+                                    <p class="text-black-50 small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, iste.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="https://images.pexels.com/photos/361184/asparagus-steak-veal-steak-veal-361184.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(4.6)</span>
+                                        <span>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star-half-stroke"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">kind of Food</a></h5>
+                                    <p class="text-black-50 small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, iste.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="https://media.istockphoto.com/photos/homemade-roasted-thanksgiving-day-turkey-picture-id495329828?k=20&m=495329828&s=612x612&w=0&h=P2-lvCymvQQKMB6csjEkfs5U1zM414e-V-P_27aNo7k=" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(4.6)</span>
+                                        <span>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star-half-stroke"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">kind of Food</a></h5>
+                                    <p class="text-black-50 small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, iste.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="https://images.pexels.com/photos/1860208/pexels-photo-1860208.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(4.6)</span>
+                                        <span>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star-half-stroke"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">kind of Food</a></h5>
+                                    <p class="text-black-50 small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, iste.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="https://images.pexels.com/photos/1600727/pexels-photo-1600727.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(4.6)</span>
+                                        <span>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star-half-stroke"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">kind of Food</a></h5>
+                                    <p class="text-black-50 small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, iste.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="https://images.pexels.com/photos/2673353/pexels-photo-2673353.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(4.6)</span>
+                                        <span>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star-half-stroke"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">kind of Food</a></h5>
+                                    <p class="text-black-50 small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, iste.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="tab-pane fade show" id="pills-breakfast" role="tabpanel" aria-labelledby="pills-breakfast-tab">
+                    <div class="row gy-4">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="https://media.istockphoto.com/photos/breakfast-picture-id173667498?k=20&m=173667498&s=612x612&w=0&h=cY3h1Q-PVs3o7_p2rDxQUg5dM0qQyI6DdjTP1wuDRes=" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(4.6)</span>
+                                        <span>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star-half-stroke"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">kind of Food</a></h5>
+                                    <p class="text-black-50 small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, iste.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="https://media.istockphoto.com/photos/breakfast-with-bacon-eggs-pancakes-and-toast-picture-id533645537?k=20&m=533645537&s=612x612&w=0&h=KJXCpAo9XQvMI_djcnRMSsz_Y7OGS6z3-8VThxWyR0Q=" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(4.6)</span>
+                                        <span>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star-half-stroke"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">kind of Food</a></h5>
+                                    <p class="text-black-50 small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, iste.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="https://media.istockphoto.com/photos/breakfast-with-bacon-eggs-pancakes-and-toast-picture-id916021360?k=20&m=916021360&s=612x612&w=0&h=Eu5-au9pvYPRffUiQkiaZ6wGe2DqiXujacVHzOHKRd4=" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(4.6)</span>
+                                        <span>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star-half-stroke"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">kind of Food</a></h5>
+                                    <p class="text-black-50 small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, iste.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+                <div class="tab-pane fade show" id="pills-lunch" role="tabpanel" aria-labelledby="pills-lunch-tab">
+                    <div class="row gy-4">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="https://images.pexels.com/photos/2313686/pexels-photo-2313686.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(4.6)</span>
+                                        <span>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star-half-stroke"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">kind of Food</a></h5>
+                                    <p class="text-black-50 small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, iste.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(4.6)</span>
+                                        <span>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star-half-stroke"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">kind of Food</a></h5>
+                                    <p class="text-black-50 small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, iste.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="https://images.pexels.com/photos/262959/pexels-photo-262959.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(4.6)</span>
+                                        <span>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star-half-stroke"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">kind of Food</a></h5>
+                                    <p class="text-black-50 small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, iste.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(4.6)</span>
+                                        <span>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star-half-stroke"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">kind of Food</a></h5>
+                                    <p class="text-black-50 small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, iste.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="https://images.pexels.com/photos/361184/asparagus-steak-veal-steak-veal-361184.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(4.6)</span>
+                                        <span>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star-half-stroke"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">kind of Food</a></h5>
+                                    <p class="text-black-50 small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, iste.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="tab-pane fade show" id="pills-dinner" role="tabpanel" aria-labelledby="pills-dinner-tab">
+                    <div class="row gy-4">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="https://media.istockphoto.com/photos/homemade-roasted-thanksgiving-day-turkey-picture-id495329828?k=20&m=495329828&s=612x612&w=0&h=P2-lvCymvQQKMB6csjEkfs5U1zM414e-V-P_27aNo7k=" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(4.6)</span>
+                                        <span>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star-half-stroke"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">kind of Food</a></h5>
+                                    <p class="text-black-50 small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, iste.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="https://images.pexels.com/photos/1860208/pexels-photo-1860208.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(4.6)</span>
+                                        <span>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star-half-stroke"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">kind of Food</a></h5>
+                                    <p class="text-black-50 small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, iste.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="https://images.pexels.com/photos/1600727/pexels-photo-1600727.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(4.6)</span>
+                                        <span>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star-half-stroke"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">kind of Food</a></h5>
+                                    <p class="text-black-50 small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, iste.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="https://images.pexels.com/photos/2673353/pexels-photo-2673353.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated(4.6)</span>
+                                        <span>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star"></i>
+                                            <i class="text-warning fas fa-star-half-stroke"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">kind of Food</a></h5>
+                                    <p class="text-black-50 small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, iste.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+              </div>
+        </div>
+    </section>
+    <!-- ======================
+    Menu Sction End
+    ======================= -->
+
+    
+    <!-- ======================
+    Features Sction Start
+    ======================= -->
+    <section id="features"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro-text text-center mb-10">
+                    <h1 class="text-white">Why Choose Us?</h1>
+                    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quas nihil recusandae mollitia a dolorum.</p>
+                </div>
+            </div>
+            <div class="row g-2 mt-1">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="feature py-5 px-4 text-center">
+                        <div class="feature-icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <h4 class="text-white mt-4 mb-2">Free wifi</h4>
+                        <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, commodi.</p>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="feature py-5 px-4 text-center">
+                        <div class="feature-icon">
+                            <i class="fas fa-stopwatch-20"></i>
+                        </div>
+                        <h4 class="text-white mt-4 mb-2">Fast Delivery</h4>
+                        <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, commodi.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="feature py-5 px-4 text-center">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4 class="text-white mt-4 mb-2">Frienly Staff</h4>
+                        <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, commodi.</p>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="feature py-5 px-4 text-center">
+                        <div class="feature-icon">
+                            <i class="fas fa-ranking-star"></i>
+                        </div>
+                        <h4 class="text-white mt-4 mb-2">Highly Rated</h4>
+                        <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, commodi.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======================
+    Features Sction End
+    ======================= -->
+
+    
+    <!-- ======================
+    Teams Sction Start
+    ======================= -->
+    <section id="teams">
+        <div class="row mb-5">
+            <div class="col-12 intro-text text-center mb-10">
+                <h1>Our Team Members</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quas nihil recusandae mollitia a dolorum.</p>
+            </div>
+        </div>
+
+        <div class="row p-3 g-2">
+            <div class="col-lg-3 col-sm-6 mb-sm-5">
+                <div class="team-member px-4 py-5 border text-center shadow-on-hover">
+                    <img src="https://images.pexels.com/photos/4252146/pexels-photo-4252146.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                    <div class="team-member-content">
+                        <h4 class="mb-2 mt-4">Chef Member</h4>
+                        <p class="mb-0">main chef</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-sm-5">
+                <div class="team-member px-4 py-5 border text-center shadow-on-hover">
+                    <img src="https://images.pexels.com/photos/4252137/pexels-photo-4252137.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                    <div class="team-member-content">
+                        <h4 class="mb-2 mt-4">Chef Member</h4>
+                        <p class="mb-0">main chef</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-sm-5">
+                <div class="team-member px-4 py-5 border text-center shadow-on-hover">
+                    <img src="https://images.pexels.com/photos/4253302/pexels-photo-4253302.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                    <div class="team-member-content">
+                        <h4 class="mb-2 mt-4">Chef Member</h4>
+                        <p class="mb-0">main chef</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-sm-5">
+                <div class="team-member px-4 py-5 border text-center shadow-on-hover">
+                    <img src="https://images.pexels.com/photos/4252136/pexels-photo-4252136.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                    <div class="team-member-content">
+                        <h4 class="mb-2 mt-4">Chef Member</h4>
+                        <p class="mb-0">main chef</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======================
+    Teams Sction End
+    ======================= -->
+
+    
+    <!-- ======================
+    Testimonials Sction Start
+    ======================= -->
+    <section id="testimonials"  class="reviews bg-light">
+        <div class="row mb-5">
+            <div class="col-12 intro-text text-center mb-10">
+                <h1 class="text-white">Our Clients Say</h1>
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quas nihil recusandae mollitia a dolorum.</p>
+            </div>
+        </div>
+
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="review bg-white p-5 text-center">
+                            <div class="qute-icon">
+                                <i class="fas fa-quote-left text-danger"></i>
+                            </div>
+                            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa neque facere numquam. Aliquid quidem, est in, ipsam natus ad non, animi earum fugit quos corrupti iusto quas cumque libero assumenda.</p>
+                            <div class="person mt-3">
+                                <img src="https://images.pexels.com/photos/715546/pexels-photo-715546.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                                <h4>Someone</h4>
+                                <div>
+                                    <span>Rated(4.6)</span>
+                                    <span>
+                                        <i class="text-warning fas fa-star"></i>
+                                        <i class="text-warning fas fa-star"></i>
+                                        <i class="text-warning fas fa-star"></i>
+                                        <i class="text-warning fas fa-star"></i>
+                                        <i class="text-warning fas fa-star-half-stroke"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="review bg-white p-5 text-center">
+                            <div class="qute-icon">
+                                <i class="fas fa-quote-left text-danger"></i>
+                            </div>
+                            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa neque facere numquam. Aliquid quidem, est in, ipsam natus ad non, animi earum fugit quos corrupti iusto quas cumque libero assumenda.</p>
+                            <div class="person mt-3">
+                                <img src="https://images.pexels.com/photos/846741/pexels-photo-846741.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                                <h4>Someone</h4>
+                                <div>
+                                    <span>Rated(4.6)</span>
+                                    <span>
+                                        <i class="text-warning fas fa-star"></i>
+                                        <i class="text-warning fas fa-star"></i>
+                                        <i class="text-warning fas fa-star"></i>
+                                        <i class="text-warning fas fa-star"></i>
+                                        <i class="text-warning fas fa-star-half-stroke"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="review bg-white p-5 text-center">
+                            <div class="qute-icon">
+                                <i class="fas fa-quote-left text-danger"></i>
+                            </div>
+                            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa neque facere numquam. Aliquid quidem, est in, ipsam natus ad non, animi earum fugit quos corrupti iusto quas cumque libero assumenda.</p>
+                            <div class="person mt-3">
+                                <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                                <h4>Someone</h4>
+                                <div>
+                                    <span>Rated(4.6)</span>
+                                    <span>
+                                        <i class="text-warning fas fa-star"></i>
+                                        <i class="text-warning fas fa-star"></i>
+                                        <i class="text-warning fas fa-star"></i>
+                                        <i class="text-warning fas fa-star"></i>
+                                        <i class="text-warning fas fa-star-half-stroke"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </section>
+    <!-- ======================
+    Testimonials Sction End
+    ======================= -->
+
+    
+    <!-- ======================
+    Reservation Sction Start
+    ======================= -->
+    <section id="reservation"  class="bg-light">
+        <div class="row mb-5">
+            <div class="col-12 intro-text text-center mb-10">
+                <h1>Book your Table</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quas nihil recusandae mollitia a dolorum.</p>
+            </div>
+        </div>
+
+        <form action="#" class="row justify-content-center p-3">
+            <div class="col-lg-8">
+                <div class="row g-4">
+                    <div class="form-group col-md-6">
+                        <input type="text" placeholder="Full Name" class="form-control">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="email" placeholder="Email Address" class="form-control">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="date" placeholder="Date" class="form-control">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="time" placeholder="Time" class="form-control">
+                    </div>
+                    <div class="form-group col-md-12">
+                        <textarea name="" id="" cols="30" rows="4" placeholder="Massege" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group col-md-12 d-flex justify-content-center">
+                        <a href="#" class="btn btn-brand">Send Message</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+    <!-- ======================
+    Reservation Sction End
+    ======================= -->
+
+    
+    <!-- ======================
+    Blog Sction Start
+    ======================= -->
+    <section id="blog">
+        <div class="row mb-5">
+            <div class="col-12 intro-text text-center mb-10">
+                <h1>Blog Posts</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quas nihil recusandae mollitia a dolorum.</p>
+            </div>
+        </div>
+
+        <div class="row p-3 g-4">
+            <div class="col-sm-6">
+                <div class="blog-post d-flex shadow-on-hover">
+                    <img src="https://images.pexels.com/photos/315755/pexels-photo-315755.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="w-sm-100">
+                    <div class="blog-post-content p-4">
+                        <p>Posted : 2/2, 2022</p>
+                        <h4><a href="#">How to make delicious food</a></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, aut ratione quo perferendis nulla suscipit hic eveniet minima nam sequi.</p>
+                        <a href="#" class="fw-bold">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="blog-post d-flex shadow-on-hover">
+                    <img src="https://images.pexels.com/photos/704569/pexels-photo-704569.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="w-sm-100">
+                    <div class="blog-post-content p-4">
+                        <p>Posted : 2/2, 2022</p>
+                        <h4><a href="#">How to make delicious food</a></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, aut ratione quo perferendis nulla suscipit hic eveniet minima nam sequi.</p>
+                        <a href="#" class="fw-bold">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="blog-post d-flex shadow-on-hover">
+                    <img src="https://images.pexels.com/photos/1824353/pexels-photo-1824353.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="w-sm-100">
+                    <div class="blog-post-content p-4">
+                        <p>Posted : 2/2, 2022</p>
+                        <h4><a href="#">How to make delicious food</a></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, aut ratione quo perferendis nulla suscipit hic eveniet minima nam sequi.</p>
+                        <a href="#" class="fw-bold">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="blog-post d-flex shadow-on-hover">
+                    <img src="https://images.pexels.com/photos/1854652/pexels-photo-1854652.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="w-sm-100">
+                    <div class="blog-post-content p-4">
+                        <p>Posted : 2/2, 2022</p>
+                        <h4><a href="#">How to make delicious food</a></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, aut ratione quo perferendis nulla suscipit hic eveniet minima nam sequi.</p>
+                        <a href="#" class="fw-bold">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======================
+    Blog Sction End
+    ======================= -->
+
+    
+    <!-- ======================
+    Footer Sction Start
+    ======================= -->
+    <footer class="footer text-white py-4">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="navbar-brand text-danger" href="#"><h2>RESTAURANT</h2></div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio quaerat ullam veritatis, debitis dolores eius unde numquam recusandae architecto fugiat tenetur eaque impedit inventore ipsam.</p>    
+                        <ul class="d-flex mt-5 list-unstyled gap-5 d-flex justify-content-center">
+                          <li><a class="d-block text-light" href="#"><i class="fa fa-brands fa-facebook fa-lg facebook rounded-circle p-3 d-flex justify-content-center" ></i></a></li>
+                          <li><a class="d-block text-light" href="#"><i class="fa fa-brands fa-twitter fa-lg twitter rounded-circle p-3 d-flex justify-content-center"></i></a></li>
+                          <li><a class="d-block text-light" href="#"><i class="fa fa-brands fa-linkedin fa-lg linkedin rounded-circle p-3 d-flex justify-content-center"></i></a></li>
+                          <li><a class="d-block text-light" href="#"><i class="fa fa-brands fa-youtube fa-lg youtube rounded-circle p-3 d-flex justify-content-center"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 ms-auto">
+                        <h6 class="text-white mb-4">CONTACT</h6>
+                        <p class="mb-1">Phone: +201008392465</p>
+                        <p class="mb-1">Email: 0marleves99@gmail.com</p>
+                        <p class="mb-0">Address: Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <h6 class="text-white mb-4">OPENING HOURS</h6>
+                        <p class="mb-1">PMonday-Friday: 08-00 - 22:00</p>
+                        <p class="mb-1">aturday: 08-00 - 22:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="year" class="text-center"></div>
+            </div>
+        </div>
+    </footer>
+    <!-- ======================
+    Footer Sction End
+    ======================= -->
+</body>
+</html>
